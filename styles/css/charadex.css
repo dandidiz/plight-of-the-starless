@@ -72,7 +72,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
 
-  --cd-header-max-size: 1.4rem; /* h1 size */
+  --cd-header-max-size: 2.5rem; /* h1 size */
   --cd-header-min-size: 1.1rem; /* h6 size */
   --cd-header-transform: uppercase; /* capitalize, lowercase, none */
 
@@ -617,6 +617,7 @@ blockquote {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
+  color: var(--bs-primary);
   font-family: var(--cd-font-header);
   font-weight: bold;
   text-transform: var(--cd-header-transform);
@@ -632,6 +633,23 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-transform: var(--cd-header-transform);
 }
 
+.script-title {
+  background-image: url("/plight-of-the-starless/assets/script-title.png");
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 70px;
+  height: 190px;
+  width: 100%;
+  z-index: 10;
+  margin-top: -60px;
+}
+.script-title h1 {
+  position: relative;
+  top: 100px;
+  right: 1em;
+}
 .subtitle {
   font-family: var(--cd-fond-header);
   font-weight: bold;
@@ -721,7 +739,7 @@ ol li::marker {
 /* Specifically for the body */
 #charadex-body {
   display: none;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 #charadex-body.active {
   display: block;
