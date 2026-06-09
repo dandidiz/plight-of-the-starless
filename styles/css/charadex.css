@@ -233,7 +233,7 @@ h6 { font-size: var(--cd-header-min-size); }
 .btn-icon i {
   font-size: 4rem;
   line-height: 4rem;
-  color: var(--bs-primary);
+  color: var(--bs-black);
 }
 /* Overriding bootstrap colors for buttons */
 .btn {
