@@ -890,15 +890,17 @@ p:last-child {
 /* ------------------------------------------------------------- */
 /* Custom
 /* ------------------------------------------------------------- */
-.star-start::before {
-  background-color: var(--cd-secondary-color);
-  -webkit-mask: url("/plight-of-the-starless/assets/star.svg") no-repeat
-    50% 50%;
-  mask: url("/plight-of-the-starless/assets/star.svg") no-repeat 50% 50%;
+.star::before {
+  background-color: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
+  mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
-  display: block;
+  vertical-align: -0.1em;
   content: "";
   height: 1em;
-  margin-bottom: -1em;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto 0 auto;
+  border: 0;
 }
