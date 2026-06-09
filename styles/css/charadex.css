@@ -910,17 +910,17 @@ hr.star-start {
 }
 
 hr.star-fall {
-  background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%);
+  background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
   -webkit-mask: url("/plight-of-the-starless/assets/star-fall.svg") no-repeat 50% 50%;
-  mask: url("/plight-of-the-starless/assets/star-fall.svg") no-repeat 50% 50%;
+  mask: url("/plight-of-the-starless/assets/star-fall.svg") no-repeat 50% 0%;
   -webkit-mask-size: contain;
   mask-size: contain;
   vertical-align: -0.1em;
   content: "";
   height: 100%;
-  width: 1em;
+  width: 0 0rem 0 -.5rem;
   padding: 1rem;
-  margin: 0;
+  margin: 0 -3px 0 -3px;
   border: 0;
   opacity: 1;
   pointer-events: none; /* prevent collision issues */
