@@ -930,5 +930,5 @@ hr.star-fall {
   border: 10px solid transparent;  /* Required for border-image */
   margin: .5em;
   padding: .5em;
-  border-image: url("/plight-of-the-starless/assets/star-frame.svg") 30 round;
+  border-image: url("/plight-of-the-starless/assets/star-frame.svg") 200 round;
 }
