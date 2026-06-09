@@ -223,7 +223,7 @@ h6 { font-size: var(--cd-header-min-size); }
 }
 .btn-icon {
   /* large front-page buttons */
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--bs-secondary);
@@ -714,8 +714,7 @@ ol li::marker {
 /* Specifically for the body */
 #charadex-body {
   display: none;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 150px;
 }
 #charadex-body.active {
   display: block;
