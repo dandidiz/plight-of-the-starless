@@ -927,8 +927,8 @@ hr.star-fall {
 }
 
 .star-border {
-  border: 10px solid transparent;  /* Required for border-image */
-  margin: .5em;
+  border: 60px solid transparent;  /* Required for border-image */
+  margin: 20px 0 20px 10px;
   padding: .5em;
-  border-image: url("/plight-of-the-starless/assets/star-frame.svg") 200 round;
+  border-image: url("/plight-of-the-starless/assets/star-frame.svg") 260 round;
 }
