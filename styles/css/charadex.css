@@ -890,7 +890,7 @@ p:last-child {
 /* ------------------------------------------------------------- */
 /* Custom
 /* ------------------------------------------------------------- */
-.star::before {
+.star-start::before {
   background-color: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
   -webkit-mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
   mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
