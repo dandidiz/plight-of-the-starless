@@ -886,3 +886,19 @@ p:last-child {
 #item-gallery .list .card-body img {
   max-height: 200px;
 }
+
+/* ------------------------------------------------------------- */
+/* Custom
+/* ------------------------------------------------------------- */
+.star-start::before {
+  background-color: var(--cd-secondary-color);
+  -webkit-mask: url("/plight-of-the-starless/assets/star.svg") no-repeat
+    50% 50%;
+  mask: url("/plight-of-the-starless/assets/star.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: block;
+  content: "";
+  height: 1em;
+  margin-bottom: -1em;
+}
