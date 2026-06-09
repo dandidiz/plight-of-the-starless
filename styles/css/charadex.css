@@ -925,3 +925,10 @@ hr.star-fall {
   opacity: 1;
   pointer-events: none; /* prevent collision issues */
 }
+
+.star-border {
+  border: 10px solid transparent;  /* Required for border-image */
+  margin: .5em;
+  padding: .5em;
+  border-image: url("/plight-of-the-starless/assets/star-frame.svg") 30 round;
+}
