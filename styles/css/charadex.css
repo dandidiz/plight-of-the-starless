@@ -485,7 +485,7 @@ body {
 /* Containers
 /* ------------------------------------------------------------- */
 #main-content {
-  padding: 1rem;
+  padding: 0;
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
@@ -496,7 +496,7 @@ body {
 
 @media (min-width: 768px) {
   #main-content {
-    padding: 0rem 0.5rem;
+    padding: 0;
     height: 62vh;
     max-width: 800px;
   }
@@ -928,7 +928,7 @@ hr.star-fall {
 
 .star-border {
   border: 60px solid transparent;  /* Required for border-image */
-  margin: 20px 0 20px 10px;
-  padding: .5em;
+  margin: 20px 10px 20px 20px;
+  padding: 0em;
   border-image: url("/plight-of-the-starless/assets/star-frame.svg") 118 round;
 }
