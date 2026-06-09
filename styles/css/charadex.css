@@ -41,16 +41,16 @@
 /* https://www.w3schools.com/colors/colors_picker.asp            */
 /* to select RGB values.                                         */
 
-  --bs-primary-rgb: 187, 95, 19;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 62, 101, 140;
+  --bs-secondary-rgb: 102, 136, 151;
   
 /* may want to flip these if going dark mode */
-  --bs-black-rgb: 0, 0, 0;
+  --bs-black-rgb: 7, 37, 50;
   --bs-white-rgb: 255, 255, 255;
 
 /* greys range from the first to the second */
-  --bs-gray: #afb6bd;
-  --bs-gray-dark: #343a40;
+  --bs-gray: #EDF5FA;
+  --bs-gray-dark: #072532;
 
 /* colors used for alerts, cards, buttons, etc */
   --bs-success-rgb: 25, 135, 84; /* for success, approve, save, etc */
@@ -58,7 +58,7 @@
   --bs-warning-rgb: 255, 193, 7; /* for warnings and alerts */
   --bs-danger-rgb: 220, 53, 69;  /* for extreme warnings, delete, etc */
   --bs-light-rgb: 248, 249, 250; /* if you want light text or cards */
-  --bs-dark-rgb: 33, 37, 41;     /* if you want dark text or cards */
+  --bs-dark-rgb: 7, 37, 50;     /* if you want dark text or cards */
 
 /* ------------------------------------------------------------- */
 /* Fonts, Weights, Sizes
@@ -348,8 +348,8 @@ body {
   background-color: var(--bs-light);
   background-image: url("/plight-of-the-starless/assets/bg-image.jpg");
   background-position: center top;
-  background-size: auto;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ------------------------------------------------------------- */
@@ -420,7 +420,7 @@ body {
 
 #footer {
   background-color: transparent;
-  color: var(--bs-gray);
+  color: var(--bs-secondary);
   margin-top: 1em;
   margin-bottom: 1em;
 }
