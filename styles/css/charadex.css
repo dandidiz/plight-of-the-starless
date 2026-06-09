@@ -917,7 +917,7 @@ hr.star-fall {
   mask-size: contain;
   vertical-align: -0.1em;
   content: "";
-  height: 100%;
+  height: 450px;
   width: 0 0rem 0 -.5rem;
   padding: 1rem;
   margin: 0 -3px 0 -3px;
