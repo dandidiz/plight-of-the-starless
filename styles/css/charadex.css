@@ -937,6 +937,7 @@ hr.star-fall {
   right: 0;
   top: 0;
   bottom: 0;
+  pointer-events: none; /* prevent collision issues */
 }
 
 .script-title {
@@ -950,11 +951,13 @@ hr.star-fall {
   width: 100%;
   z-index: 10;
   margin-top: -60px;
+  pointer-events: none; /* prevent collision issues */
 }
 .script-title h1 {
   position: relative;
   top: 100px;
   right: 1em;
+  pointer-events: auto;
 }
 .script-footer {
   background-image: url("/plight-of-the-starless/assets/wax-seal.png");
@@ -967,9 +970,11 @@ hr.star-fall {
   width: 100%;
   z-index: 10;
   margin-top: -60px;
+  pointer-events: none; /* prevent collision issues */
 }
 .script-footer h1 {
   position: relative;
   top: 100px;
   right: 1em;
+  pointer-events: auto;
 }
