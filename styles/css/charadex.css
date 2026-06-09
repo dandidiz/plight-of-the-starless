@@ -906,3 +906,22 @@ hr.star-start {
   opacity: 1;
   pointer-events: none; /* prevent collision issues */
 }
+
+hr.star-top {
+  background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
+  mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  vertical-align: -0.1em;
+  content: "";
+  height: 1em;
+  width: 100%;
+  padding: 1rem;
+  margin: -2em 0 -1em -50px;
+  border: 0;
+  opacity: 1;
+  pointer-events: none; /* prevent collision issues */
+  
+  transform: rotate(90deg);
+}
