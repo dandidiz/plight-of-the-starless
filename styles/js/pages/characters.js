@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.log("LIST DATA:", listData); 
       if (listData.type == 'profile') {
         
-        $('#main-container').css('height','auto');
+        $('#main-content').css('height','auto');
         $('#anchor-nav').show();
 
         let profile = listData.profileArray[0];

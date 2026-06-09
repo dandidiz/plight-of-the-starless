@@ -482,8 +482,7 @@ body {
 /* ------------------------------------------------------------- */
 /* Containers
 /* ------------------------------------------------------------- */
-#main-container {
-  max-width: 800px;
+#main-content {
   padding: 1rem;
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
@@ -494,9 +493,10 @@ body {
 }
 
 @media (min-width: 768px) {
-  #main-container {
+  #main-content {
     padding: 0rem 0.5rem;
     height: 62vh;
+    max-width: 800px;
   }
 
   #main-card {
