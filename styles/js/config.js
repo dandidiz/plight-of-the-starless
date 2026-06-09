@@ -11,9 +11,9 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* --------------------------------------------------------------- */
 charadex.site = {
-  title: 'Charadex: RP',
-  url: 'https://junijwi.github.io/charadex-rp/',
-  description: `Charadex: RP is a roleplay group site base that tracks character profiles, currencies, inventories, prompts, and lore!`
+  title: 'Plight of the Starless',
+  url: 'https://dandidiz.github.io/plight-of-the-starless/',
+  description: ``
 }
 
 /* --------------------------------------------------------------- */
