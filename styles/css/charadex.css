@@ -617,7 +617,7 @@ blockquote {
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--bs-primary);
+  color: var(--bs-secondary);
   font-family: var(--cd-font-header);
   font-weight: bold;
   text-transform: var(--cd-header-transform);
@@ -949,11 +949,12 @@ hr.star-fall {
   top: 70px;
   height: 190px;
   width: 100%;
-  z-index: 10;
   margin-top: -60px;
+  z-index: 10;
   pointer-events: none; /* prevent collision issues */
 }
 .script-title h1 {
+  text-align: right;
   position: relative;
   top: 100px;
   right: 1em;
@@ -965,16 +966,16 @@ hr.star-fall {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  top: 70px;
-  height: 190px;
+  top: -80px;
+  left: -40px;
+  height: 187px;
   width: 100%;
   z-index: 10;
-  margin-top: -60px;
   pointer-events: none; /* prevent collision issues */
 }
 .script-footer h1 {
   position: relative;
-  top: 100px;
-  right: 1em;
+  top: 29px;
+  left: 126px;
   pointer-events: auto;
 }
