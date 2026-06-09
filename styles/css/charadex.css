@@ -536,22 +536,26 @@ body {
 }
 
 /* Navbar Links */
-.navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link, .nav.nav-pills .nav-item .nav-link {
   color: var(--bs-link-color);
   font-size: 1.5em;
   font-weight: bold;
 }
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:focus {
+.navbar .navbar-nav .nav-link:focus,
+.nav.nav-pills .nav-item .nav-link:hover,
+.nav.nav-pills .nav-item .nav-link:focus {
   color: var(--bs-link-hover-color);
 }
 
-.navbar .navbar-nav .nav-link.disabled {
+.navbar .navbar-nav .nav-link.disabled,
+.nav.nav-pills .nav-item .nav-link.disabled {
   color: var(--bs-tertiary-color) ;
 }
 
 .nav .nav-item {
+  font-family: var(--cd-font-header);
   margin-bottom: 0 !important;
   padding-left: 0 !important;
 }
