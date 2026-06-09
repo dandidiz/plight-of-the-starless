@@ -483,6 +483,7 @@ body {
 /* Containers
 /* ------------------------------------------------------------- */
 #main-container {
+  max-width: 800px;
   padding: 1rem;
   -ms-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
