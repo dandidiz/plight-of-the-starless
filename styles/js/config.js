@@ -23,7 +23,7 @@ charadex.site = {
 /* --------------------------------------------------------------- */
 charadex.sheet = {
 
-  id: '1VHPmKI2mkyQCg2HPe4zXzK8YmhvGRcIrXf0qXoiwRUo',
+  id: '1zUHTPOgsoz6QNTmu7kem8yDkOmTBmdhYWqhdEJ2Y5g0',
 
   pages: { // these should match your sheet names, but in lowercase
     masterlist:    'characters',
