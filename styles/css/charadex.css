@@ -41,8 +41,8 @@
 /* https://www.w3schools.com/colors/colors_picker.asp            */
 /* to select RGB values.                                         */
 
-  --bs-primary-rgb: 62, 101, 140;
-  --bs-secondary-rgb: 102, 136, 151;
+  --bs-primary-rgb: 102, 136, 151;
+  --bs-secondary-rgb: 62, 101, 140;
   
 /* may want to flip these if going dark mode */
   --bs-black-rgb: 7, 37, 50;
@@ -231,7 +231,8 @@ h6 { font-size: var(--cd-header-min-size); }
 
 }
 .btn-icon i {
-  font-size: 1.5rem;
+  font-size: 4rem;
+  line-height: 4rem;
   color: var(--bs-primary);
 }
 /* Overriding bootstrap colors for buttons */
