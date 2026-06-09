@@ -223,7 +223,7 @@ h6 { font-size: var(--cd-header-min-size); }
 }
 .btn-icon {
   /* large front-page buttons */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--bs-secondary);
@@ -231,6 +231,7 @@ h6 { font-size: var(--cd-header-min-size); }
 
 }
 .btn-icon i {
+  font-size: 1.5rem;
   color: var(--bs-primary);
 }
 /* Overriding bootstrap colors for buttons */
@@ -922,6 +923,6 @@ hr.star-top {
   border: 0;
   opacity: 1;
   pointer-events: none; /* prevent collision issues */
-  
+
   transform: rotate(90deg);
 }
