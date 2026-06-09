@@ -714,8 +714,8 @@ ol li::marker {
 /* Specifically for the body */
 #charadex-body {
   display: none;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 300px;
+  margin-bottom: 300px;
 }
 #charadex-body.active {
   display: block;
