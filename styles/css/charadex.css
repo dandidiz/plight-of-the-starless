@@ -63,11 +63,10 @@
 /* ------------------------------------------------------------- */
 /* Fonts, Weights, Sizes
 /* ------------------------------------------------------------- */
-  --cd-font-header: "Comfortaa";
-  --cd-font-body: "Montserrat";
+  --cd-font-title: "Monda";
+  --cd-font-header: "Rajdhani";
+  --cd-font-body: "Ubuntu";
   --cd-font-monospace: SFMono-Regular;
-  --cd-font-serif: "Domine";
-  --cd-font-decorative: "Permanent Marker";
 
   --bs-body-font-size: 10pt;
   --bs-body-font-weight: 400;

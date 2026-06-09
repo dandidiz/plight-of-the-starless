@@ -39,106 +39,70 @@
   <link rel="stylesheet" type="text/css" href="/plight-of-the-starless/styles/css/charadex.css" />
 
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Rajdhani:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body id="charadex-body" class="d-flex">
   <!-- ----------------------------------------------------------------- -->
   <!-- Header                                                            -->
   <!-- ----------------------------------------------------------------- -->
-  <div class="load-html" data-source="/plight-of-the-starless/includes/header.html"></div>
   <div class="loading text-primary"><i class="fa-solid fa-hourglass fa-spin fa-spin-reverse"></i></div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- Main Container                                                    -->
   <!-- ----------------------------------------------------------------- -->
-  <div id="main-container" class="container d-flex order-md-2 order-3">
-    <div id="gallery-card" class="flex-grow-1 mx-md-3 mx-0 softload">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-auto">
+      <div class="load-html" data-source="/plight-of-the-starless/includes/sidebar.html"></div>
+    </div>
+    <div class="col-auto">
+      <div id="main-container" class="container-fluid d-flex flex-row card bg-body-tertiary card-body mb-4">
 
-      <!-- --------------------------------------------------------------- -->
-      <!-- Content                                                         -->
-      <!-- --------------------------------------------------------------- -->
-
-      <!-- Design Gallery -->
-      <div class="card bg-body-tertiary card-body mb-4">
-        <div id="charadex-gallery">
-          <h1 class="text-center"><a href="characters">Newest Characters</a></h1>
-          <div class="row charadex-list list m-n2"></div>
-        </div>
-      </div>
-
-      <!-- Prompts Gallery -->
-      <div class="card bg-body-tertiary card-body">
-        <div id="prompt-gallery">
-          <h1 class="text-center"><a href="prompts">Recent prompts</a></h1>
-          <div class="row prompt-list list m-n2"></div>
-        </div>
-      </div>
-      <!-- --------------------------------------------------------------- -->
-      <!-- End of Content                                                  -->
-      <!-- --------------------------------------------------------------- -->
-       
-    </div> <!-- End of gallery-card -->
-  </div> <!-- End of main-container -->
+        <!-- --------------------------------------------------------------- -->
+        <!-- Content                                                         -->
+        <!-- --------------------------------------------------------------- -->
+        <button class="btn" href="/plight-of-the-starless/info/premise">
+          <i class="fa-regular fa-star fa-2xl"></i>
+          Premise
+        </button>
+        <button class="btn" href="/plight-of-the-starless/info/world">
+          <i class="fa-regular fa-star fa-2xl"></i>
+          World
+        </button>
+        <button class="btn" href="/plight-of-the-starless/characters">
+          <i class="fa-regular fa-star fa-2xl"></i>
+          Characters
+        </button>
+        <button class="btn" href="/plight-of-the-starless/info/timeline">
+          <i class="fa-regular fa-star fa-2xl"></i>
+          Timeline
+        </button>
+        <button class="btn" href="/plight-of-the-starless/prompts">
+          <i class="fa-regular fa-star fa-2xl"></i>
+          Prompts
+        </button>
+        <button class="btn" href="/plight-of-the-starless/collaborators">
+          <i class="fa-regular fa-star fa-2xl"></i>
+          Collaborators
+        </button>
+        <!-- --------------------------------------------------------------- -->
+        <!-- End of Content                                                  -->
+        <!-- --------------------------------------------------------------- -->
+          
+      </div> <!-- End of main-container -->
+    </div>
+    <div class="col">
+    </div>
+  </div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- Footer                                                            -->
   <!-- ----------------------------------------------------------------- -->
   <div class="load-html" data-source="/plight-of-the-starless/includes/footer.html"></div>
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Repeat Items                                                      -->
-  <!-- Do not remove 'display:none;'                                     -->
-  <!-- ----------------------------------------------------------------- -->
-  <div style="display: none">
-    <!-- --------------------------------------------------------------- -->
-    <!-- Gallery Item - Character Thumb                                  -->
-    <!-- --------------------------------------------------------------- -->
-    <div class="col-md-3 col-6 p-2" id="charadex-gallery-item">
-      <div class="card bg-body-tertiary h-100">
-        <div class="card-header text-center d-flex">
-          <div class="m-auto z-1">
-            <a class="stretched-link profileid profilelink" href=""></a>
-          </div>
-        </div>
-        <div class="card-body cd-gallery-card d-flex flex-column flex-fill">
-          <img class="img-thumbnail img-fluid refthumbnail m-auto" src="" alt="Character thumbnail.">
-        </div>
-        <div class="card-footer text-muted">
-          <div class="row">
-            <div class="col player"></div>
-            <div class="col-auto categorybadge"></div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- End of Character Thumb -->
-
-    <!-- ----------------------------------------------------------------- -->
-    <!-- Gallery Items - Prompt Thumb                                      -->
-    <!-- ----------------------------------------------------------------- -->
-    <div class="col-md-6 p-2 mb-4" id="prompt-gallery-item">
-      <div class="card bg-body-tertiary h-100">
-        <div class="card-header text-center d-flex">
-          <div class="m-auto z-1">
-            <a class="stretched-link profileid profilelink" href=""></a>
-          </div>
-        </div>
-        <div class="card-body d-flex flex-column flex-fill">
-          <div class="summary mb-auto"></div>
-        </div>
-        <div class="card-footer text-muted">
-          <div class="row m-n1 px-3">
-            <div class="col p-1"><b>Start Date:</b> <span class="startdate"></span></div>
-            <div class="col p-1"><b>End Date:</b> <span class="enddate"></span></div>
-          </div>
-          <div class="categorybadge"></div>
-        </div>
-      </div>
-    </div> <!-- End of Prompt Thumb -->
-
-  </div> <!-- End of Repeat Items -->
 
   <!-- ----------------------------------------------------------------- -->
   <!-- JS                                                                -->
