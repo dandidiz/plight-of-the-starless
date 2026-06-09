@@ -221,6 +221,18 @@ h6 { font-size: var(--cd-header-min-size); }
   --cd-btn-class-color: var(--bs-dark);
   --cd-btn-class-color-rgb: var(--bs-dark-rgb);
 }
+.btn-icon {
+  /* large front-page buttons */
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--bs-secondary);
+  padding: 1em;
+
+}
+.btn-icon i {
+  color: var(--bs-primary);
+}
 /* Overriding bootstrap colors for buttons */
 .btn {
   --bs-btn-font-size: var(--bs-body-font-size);
@@ -702,8 +714,8 @@ ol li::marker {
 /* Specifically for the body */
 #charadex-body {
   display: none;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 #charadex-body.active {
   display: block;
