@@ -311,9 +311,9 @@ h6 { font-size: var(--cd-header-min-size); }
 /* ------------------------------------------------------------- */
 /* border styles
 /* ------------------------------------------------------------- */
-  --bs-border-width: 0px;
+  --bs-border-width: 3px;
   --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
+  --bs-border-color: var(--bs-cyan);
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
 
   --bs-border-radius: 1rem;
@@ -926,8 +926,50 @@ hr.star-fall {
   pointer-events: none; /* prevent collision issues */
 }
 
+hr.star-left {
+  --iconSize: 20px;
+  --hrcolor: var(--bs-border-color);
+  --hrbgcolor: transparent;
+  --hrgap: 15px;
+  --hrweight: 1px;
+  --gst: calc(50% - var(--hrgap));
+  --gen: calc(50% + var(--hrgap));
+  position: relative;
+  border-top: 0px;
+  height: var(--iconSize);
+  opacity: 1;
+}
+hr.star-left::before {
+  content: "";
+  top: calc(var(--iconSize) / 2);
+  position: absolute;
+  background: grey;
+  background: linear-gradient(
+    90deg,
+    var(--hrcolor) 0%,
+    var(--hrcolor) var(--gst),
+    var(--hrbgcolor) var(--gst),
+    var(--hrbgcolor) var(--gen),
+    var(--hrcolor) var(--gen),
+    var(--hrcolor) 100%
+  );
+  height: var(--hrweight);
+  width: 100%;
+  display: block;
+}
+hr.star-left::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  content: url("/plight-of-the-starless/assets/star-frame.svg");
+  display: block;
+  width: var(--iconSize);
+  height:var(--iconSize);
+}
+
 .star-border {
-  color: var(--bs-cyan);
+  filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
   border: 50px solid transparent;  /* Required for border-image */
   margin: 20px 10px 20px 20px;
   padding: 0em;
@@ -938,6 +980,9 @@ hr.star-fall {
   top: 0;
   bottom: 0;
   pointer-events: none; /* prevent collision issues */
+}
+.star-border.border-dark {
+  filter: invert(11%) sepia(11%) saturate(4012%) hue-rotate(155deg) brightness(92%) contrast(96%);
 }
 
 .script-title {
