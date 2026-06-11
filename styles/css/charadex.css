@@ -90,7 +90,7 @@
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
+  --bs-cyan: #85BBD3;
 
 /* ************************************************************* */
 /*                    2. Color Calculations
@@ -927,6 +927,7 @@ hr.star-fall {
 }
 
 .star-border {
+  color: var(--bs-cyan);
   border: 50px solid transparent;  /* Required for border-image */
   margin: 20px 10px 20px 20px;
   padding: 0em;
