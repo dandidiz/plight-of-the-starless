@@ -610,7 +610,7 @@ hr {
 blockquote {
   color: var(--bs-secondary);
   border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
-  margin: 0 0 1rem;
+  margin: .5em 0 1em 1em;
   padding: 0 0 0 1em;
 }
 
