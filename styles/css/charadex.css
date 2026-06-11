@@ -425,11 +425,11 @@ body {
 /* ------------------------------------------------------------- */
 /* Header and Footer
 /* ------------------------------------------------------------- */
-#header {
+/* #header {
   background-color: var(--bs-light);
   margin-bottom: 1rem;
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-light-bg-subtle);
-}
+} */
 
 #footer {
   background-color: transparent;
