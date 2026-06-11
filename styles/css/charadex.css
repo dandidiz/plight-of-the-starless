@@ -707,6 +707,7 @@ ol li::marker {
   height: 100vh;
   text-align: center;
   position: absolute;
+  transition: opacity 0.2s ease;
 }
 .loading.inactive {
   opacity: 0;
@@ -716,6 +717,7 @@ ol li::marker {
 /* Fades container in on load so its not as jarring */
 .softload {
   opacity: 0;
+  transition: opacity 0.2s ease;
 }
 .softload.active {
   opacity: 1;
