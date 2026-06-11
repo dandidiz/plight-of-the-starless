@@ -768,11 +768,13 @@ img {
 }
 
 .img-thumbnail {
+  border-radius: 0;
+  background-color: transparent;
   border: none;
   border-image: url("/plight-of-the-starless/assets/star-frame.svg") 118 stretch;
-  border-image-outset: 8px;
   border-image-width: 50px;
-  padding: 0 12px 0 0;
+  padding: 10px 22px 10px 10px;
+  margin-left: 12px;
 }
 
 /* ------------------------------------------------------------- */
@@ -979,10 +981,10 @@ hr.star.star-right {
 }
 
 .star-border {
-  border: none;
+  border: 24px solid transparent;
   margin: 0 -12px 0 0;
+  padding: 0 12px 0 0;
   border-image: url("/plight-of-the-starless/assets/star-frame.svg") 118 round;
-  border-image-outset: 8px;
   border-image-width: 50px;
 }
 
