@@ -928,11 +928,11 @@ hr.star-fall {
 
 hr.star {
   --iconSize: 16px;
-  --hrgap: 16px;
+  --hrgap: 12px;
   --hrweight: var(--bs-border-width);
   --starpos: 50%;
   --gst: calc(var(--starpos) - var(--hrgap));
-  --gen: calc(100% - var(--starpos) + var(--hrgap));
+  --gen: calc(var(--starpos) + var(--hrgap));
   position: relative;
   border-top: 0px;
   height: var(--iconSize);
@@ -955,7 +955,7 @@ hr.star::before {
 }
 hr.star::after {
   position: absolute;
-  left: 50%;
+  left: var(--starpos);
   transform: translateX(-50%);
   text-align: center;
   content: url("/plight-of-the-starless/assets/star.svg");
