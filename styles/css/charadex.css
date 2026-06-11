@@ -767,6 +767,14 @@ img {
   max-height: 600px;
 }
 
+.img-thumbnail {
+  border: none;
+  border-image: url("/plight-of-the-starless/assets/star-frame.svg") 118 stretch;
+  border-image-outset: 8px;
+  border-image-width: 50px;
+  padding: 0 12px 0 0;
+}
+
 /* ------------------------------------------------------------- */
 /* Pagination
 /* ------------------------------------------------------------- */
@@ -971,20 +979,11 @@ hr.star.star-right {
 }
 
 .star-border {
-  filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
-  border: 50px solid transparent;  /* Required for border-image */
-  margin: 20px 10px 20px 20px;
-  padding: 0em;
+  border: none;
+  margin: 0 -12px 0 0;
   border-image: url("/plight-of-the-starless/assets/star-frame.svg") 118 round;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  pointer-events: none; /* prevent collision issues */
-}
-.star-border.border-dark {
-  filter: invert(11%) sepia(11%) saturate(4012%) hue-rotate(155deg) brightness(92%) contrast(96%);
+  border-image-outset: 8px;
+  border-image-width: 50px;
 }
 
 .script-title {
