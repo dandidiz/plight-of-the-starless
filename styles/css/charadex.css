@@ -969,6 +969,7 @@ hr.star::before {
   height: var(--hrweight);
   width: 100%;
   display: block;
+  border-radius: var(--bs-border-radius);
 }
 hr.star::after {
   position: absolute;
@@ -1009,6 +1010,7 @@ blockquote.star::before {
   width: var(--hrweight);
   height: 100%;
   display: block;
+  border-radius: var(--bs-border-radius);
   filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
 }
 blockquote.star::after {
