@@ -605,7 +605,7 @@ body {
 /* ------------------------------------------------------------- */
 blockquote {
   color: var(--bs-secondary);
-  border-left: calc(var(--bs-border-width)*2) var(--bs-border-style) var(--bs-border-color);
+  border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
   margin: 0 0 1rem;
   padding: 0 0 0 1em;
 }
@@ -902,6 +902,7 @@ p:last-child {
 /* ------------------------------------------------------------- */
 /* Custom
 /* ------------------------------------------------------------- */
+/* the star divider in the sidebar */
 hr.star-nav {
   background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%);
   -webkit-mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
@@ -919,6 +920,7 @@ hr.star-nav {
   pointer-events: none; /* prevent collision issues */
 }
 
+/* the star decorations on the index */
 hr.star-fall {
   background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
   -webkit-mask: url("/plight-of-the-starless/assets/star-fall.svg") no-repeat 50% 50%;
@@ -936,6 +938,7 @@ hr.star-fall {
   pointer-events: none; /* prevent collision issues */
 }
 
+/* a normal star hr */
 hr.star {
   --iconSize: 16px;
   --hrgap: 12px;
@@ -978,6 +981,41 @@ hr.star.star-left {
 }
 hr.star.star-right {
   --starpos: 90%;
+}
+
+/* star blockquotes */
+blockquote.star {
+  --iconSize: 16px;
+  --hrgap: 12px;
+  --hrweight: var(--bs-border-width);
+  --starpos: 0%;
+  --gst: calc(var(--starpos) - var(--hrgap));
+  --gen: calc(var(--starpos) + var(--hrgap));
+  position: relative;
+  border-left: 0px;
+  filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
+}
+blockquote.star::before {
+  content: "";
+  left: calc((var(--iconSize) / 2) - (var(--hrweight) / 2));
+  position: absolute;
+  background: linear-gradient(180deg,
+    black 0%,black var(--gst),
+    transparent var(--gst),transparent var(--gen),
+    black var(--gen),black 100%);
+  width: var(--hrweight);
+  height: 100%;
+  display: block;
+}
+blockquote.star::after {
+  position: absolute;
+  top: var(--starpos);
+  transform: translateY(-50%);
+  text-align: center;
+  content: url("/plight-of-the-starless/assets/star.svg");
+  width: var(--iconSize);
+  height:var(--iconSize);
+  display: block;
 }
 
 .star-border {
