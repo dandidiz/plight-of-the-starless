@@ -892,7 +892,7 @@ p:last-child {
 /* ------------------------------------------------------------- */
 /* Custom
 /* ------------------------------------------------------------- */
-hr.star-start {
+hr.star-nav {
   background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%);
   -webkit-mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
   mask: url("/plight-of-the-starless/assets/star-line.svg") no-repeat 50% 50%;
@@ -926,46 +926,48 @@ hr.star-fall {
   pointer-events: none; /* prevent collision issues */
 }
 
-hr.star-left {
-  --iconSize: 20px;
-  --hrcolor: var(--bs-border-color);
-  --hrbgcolor: transparent;
-  --hrgap: 15px;
-  --hrweight: 1px;
-  --gst: calc(50% - var(--hrgap));
-  --gen: calc(50% + var(--hrgap));
+hr.star {
+  --iconSize: 16px;
+  --hrgap: 16px;
+  --hrweight: var(--bs-border-width);
+  --starpos: 50%;
+  --gst: calc(var(--starpos) - var(--hrgap));
+  --gen: calc(100% - var(--starpos) + var(--hrgap));
   position: relative;
   border-top: 0px;
   height: var(--iconSize);
+  width: 80%;
+  margin: 1em auto 1em auto;
   opacity: 1;
+  filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
 }
-hr.star-left::before {
+hr.star::before {
   content: "";
-  top: calc(var(--iconSize) / 2);
+  top: calc((var(--iconSize) / 2) - (var(--hrweight) / 2));
   position: absolute;
-  background: grey;
-  background: linear-gradient(
-    90deg,
-    var(--hrcolor) 0%,
-    var(--hrcolor) var(--gst),
-    var(--hrbgcolor) var(--gst),
-    var(--hrbgcolor) var(--gen),
-    var(--hrcolor) var(--gen),
-    var(--hrcolor) 100%
-  );
+  background: linear-gradient(90deg,
+    black 0%,black var(--gst),
+    transparent var(--gst),transparent var(--gen),
+    black var(--gen),black 100%);
   height: var(--hrweight);
   width: 100%;
   display: block;
 }
-hr.star-left::after {
+hr.star::after {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  content: url("/plight-of-the-starless/assets/star-frame.svg");
-  display: block;
+  content: url("/plight-of-the-starless/assets/star.svg");
   width: var(--iconSize);
   height:var(--iconSize);
+  display: block;
+}
+hr.star.star-left {
+  --starpos: 10%;
+}
+hr.star.star-right {
+  --starpos: 90%;
 }
 
 .star-border {
