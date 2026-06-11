@@ -603,6 +603,10 @@ body {
 /* ------------------------------------------------------------- */
 /* Various Text Styling
 /* ------------------------------------------------------------- */
+hr {
+  border-radius: var(--bs-border-radius);
+}
+
 blockquote {
   color: var(--bs-secondary);
   border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
@@ -988,12 +992,11 @@ blockquote.star {
   --iconSize: 16px;
   --hrgap: 12px;
   --hrweight: var(--bs-border-width);
-  --starpos: 0%;
+  --starpos: 50%;
   --gst: calc(var(--starpos) - var(--hrgap));
   --gen: calc(var(--starpos) + var(--hrgap));
   position: relative;
   border-left: 0px;
-  filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
 }
 blockquote.star::before {
   content: "";
@@ -1006,6 +1009,7 @@ blockquote.star::before {
   width: var(--hrweight);
   height: 100%;
   display: block;
+  filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
 }
 blockquote.star::after {
   position: absolute;
@@ -1017,6 +1021,13 @@ blockquote.star::after {
   width: var(--iconSize);
   height:var(--iconSize);
   display: block;
+  filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
+}
+blockquote.star.star-top {
+  --starpos: 0%
+}
+blockquote.star.star-bottom {
+  --starpos: 100%
 }
 
 .star-border {
