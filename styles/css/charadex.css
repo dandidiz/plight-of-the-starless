@@ -997,7 +997,7 @@ blockquote.star {
 }
 blockquote.star::before {
   content: "";
-  left: calc((var(--iconSize) / 2) - (var(--hrweight) / 2));
+  left: 0;
   position: absolute;
   background: linear-gradient(180deg,
     black 0%,black var(--gst),
@@ -1010,7 +1010,8 @@ blockquote.star::before {
 blockquote.star::after {
   position: absolute;
   top: var(--starpos);
-  transform: translateY(-50%);
+  left: calc(var(--hrweight)/2);
+  transform: translateX(-50%) translateY(-50%);
   text-align: center;
   content: url("/plight-of-the-starless/assets/star.svg");
   width: var(--iconSize);
