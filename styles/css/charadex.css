@@ -909,6 +909,12 @@ p:last-child {
 /* ------------------------------------------------------------- */
 /* Gallery lists
 /* ------------------------------------------------------------- */
+#charadex-gallery #main-card,
+#prompt-gallery #main-card,
+#player-gallery #main-card,
+#item-gallery #main-card {
+  height: auto;
+}
 #charadex-gallery .cd-gallery-card {
   aspect-ratio: 1/1;
 }
