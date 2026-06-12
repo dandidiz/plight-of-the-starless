@@ -740,12 +740,11 @@ ol li::marker {
   transition: opacity 0.2s ease;
 }
 
-/* Specifically for the body */
-#charadex-body {
+#header {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-#charadex-body {
+#header {
   margin-top: 20px;
 }
 }
