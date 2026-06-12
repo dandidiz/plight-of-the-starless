@@ -575,7 +575,6 @@ body {
 
 .nav-pills .nav-item .nav-link.active {
   background-color: transparent;
-  color: var(--bs-light);
 }
 .nav-pills .nav-link.active::before {
   content: "✦";
