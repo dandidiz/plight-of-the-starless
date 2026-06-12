@@ -622,6 +622,13 @@ body {
   padding: 0;
 }
 
+.bs-actionsbox .btn-group button {
+  font-size: .9em;
+}
+#search-options ul li {
+  padding: 0;
+}
+
 /* ------------------------------------------------------------- */
 /* Various Text Styling
 /* ------------------------------------------------------------- */
