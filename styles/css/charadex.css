@@ -721,12 +721,12 @@ ol li::marker {
   z-index: 1000;
 }
 .to-top {
-  right: calc((100vw - 1000px) / 2 - 99px);
+  right: calc((100vw - 1000px) / 2 - 110px);
   top: 45%;
   width: 100px;
 }
 .to-bottom {
-  right: calc((100vw - 1000px) / 2 - 99px);
+  right: calc((100vw - 1000px) / 2 - 110px);
   bottom: 45%;
   width: 100px;
 }
