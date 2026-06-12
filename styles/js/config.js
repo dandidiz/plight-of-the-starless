@@ -428,7 +428,7 @@ charadex.page.masterlist = {
     },
 
     search: {
-      toggle: true,
+      toggle: false,
       filterToggle: false,
       parameters: ['Item']
     },

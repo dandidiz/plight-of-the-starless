@@ -266,7 +266,7 @@
         <!-- --------- -->
         <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="item-tab">
 
-          <hr class="border-info">
+          <hr class="star">
           <!-- ---------------- -->
           <!-- Image and Basics -->
           <!-- ---------------- -->
@@ -375,7 +375,7 @@
           <!-- ---------------- -->
           <!--   Personality    -->
           <!-- ---------------- -->
-          <hr class="border-info">
+          <hr class="star star-right">
           <h2 class="text-center mt-2" id="personality"><a href="#personality">Personality</a></h2>
 
           <!-- Banner Info -->
@@ -403,33 +403,30 @@
           <!-- Skills -->
           <!-- ----- -->
           <div id="item-gallery">
-            <div class="card bg-body-tertiary p-4 mb-4">
+            <!-- ----- -->
+            <!-- Title -->
+            <!-- ----- -->
+            <h2 class="text-primary d-flex justify-content-between align-items-center mb-0">
+              Skills
+              <a href="#item-filter-toggle" data-bs-toggle="collapse"><i class="fas fa-filter fa-fw"></i></a>
+            </h2>
 
-              <!-- ----- -->
-              <!-- Title -->
-              <!-- ----- -->
-              <h2 class="text-primary d-flex justify-content-between align-items-center mb-0">
-                Skills
-                <a href="#item-filter-toggle" data-bs-toggle="collapse"><i class="fas fa-filter fa-fw"></i></a>
-              </h2>
+            <hr class="star star-left">
 
-              <div class="collapse" id="item-filter-toggle">
-
-                <!-- ------- -->
+            <div class="collapse" id="item-filter-toggle">
+              <!-- ------- -->
+              <!-- Filters -->
+              <!-- ------- -->
+              <div style="display:none;" id="item-filter-container">
+                <div class="row mb-2 gy-2" id="item-filters"></div>
                 <!-- Filters -->
-                <!-- ------- -->
-                <div style="display:none;" id="item-filter-container">
-                  <div class="row mb-2 gy-2" id="item-filters"></div>
-                  <!-- Filters -->
-                  <div style="display: none;">
-                    <div class="col-md-4 col-12" id="item-filter">
-                      <label class="px-2"></label>
-                      <select class="form-control" multiple data-actions-box="true" data-icon-base="fa-solid"
-                        data-tick-icon="fa-check"></select>
-                    </div>
+                <div style="display: none;">
+                  <div class="col-md-4 col-12" id="item-filter">
+                    <label class="px-2"></label>
+                    <select class="form-control" multiple data-actions-box="true" data-icon-base="fa-solid"
+                      data-tick-icon="fa-check"></select>
                   </div>
                 </div>
-
               </div>
 
               <!-- ------ -->
@@ -494,9 +491,8 @@
           <!-- ---------------- -->
           <!--       Lore       -->
           <!-- ---------------- -->
-          <hr class="border-info">
+          <hr class="star star-right">
           <h2 class="text-center mt-2" id="lore"><a href="#lore">Lore</a></h2>
-          <hr class="border-info">
           <div class="p-md-3 p-2 lore"></div>
 
         </div>
@@ -516,17 +512,6 @@
       </div>
 
     </div> <!-- End of Character Card -->
-    
-    <!-- --------------------------------------------------------------- -->
-    <!-- List Item - Log Thumb                                           -->
-    <!-- --------------------------------------------------------------- -->
-    <div class="position-relative mb-2" id="log-gallery-item">
-      <div class="row">
-        <div class="col-md-2 col-6 text-muted timestamp"></div>
-        <div class="col-md-2 col-6 mod"></div>
-        <div class="col-md col-12 reason"></div>
-      </div>
-    </div> <!-- End of Log Thumb -->
 
   </div> <!-- End of Repeat Items -->
 
