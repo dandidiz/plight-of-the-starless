@@ -63,6 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.updateMeta();
   console.log('✅');
 
-  charadex.tools.loadPage('#charadex-body')
+  charadex.tools.loadPage('html')
 
 });

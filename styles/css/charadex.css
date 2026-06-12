@@ -747,10 +747,10 @@ ol li::marker {
   opacity: 1;
   transition: opacity 0.2s ease;
 }
-#charadex-body {
+html {
   filter: hue-rotate(45deg);
 }
-#charadex-body.active {
+html.active {
   filter: none;
   transition: filter 0.2s ease;
 }
