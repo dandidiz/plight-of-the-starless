@@ -39,7 +39,6 @@ charadex.sheet = {
     roles: ['Story Character', 'Player Character', 'Side Character'],
     statuses: ['Active', 'Out of Date', 'Retired', 'Dead', 'WIP'],
     category: ['All', 'Witch', 'Knight', 'Mundane'],
-    subcategory: ['All', 'One', 'Two', 'Three', 'Four', 'Five'],
     itemTypes: ['All', 'Currency', 'Voucher', 'Achievement', 'Gatcha', 'Misc'],
   }
 
@@ -319,7 +318,6 @@ charadex.page.masterlist = {
       'Role': charadex.sheet.options.roles,
       'Status': charadex.sheet.options.statuses,
       'Category': charadex.sheet.options.category,
-      'Subcategory': charadex.sheet.options.subcategory,
     }
   },
 
