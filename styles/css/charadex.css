@@ -93,6 +93,8 @@
   --bs-cyan: #85BBD3;
 
   --hue-shift: 0deg;
+  --brightness: 100%;
+  --contrast: 100%;
 
 /* ************************************************************* */
 /*                    2. Color Calculations
