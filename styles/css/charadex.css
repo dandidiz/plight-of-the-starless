@@ -498,6 +498,7 @@ body {
 }
 
 #sidebar {
+  margin-top: 30vh;
   width: 100%;
 }
 
@@ -704,13 +705,16 @@ ol li::marker {
 /* to Top & Bottom
 /* ------------------------------------------------------------- */
 /* These buttons are used on the character profile page          */
+#anchor-nav {
+  z-index: 1000;
+}
 .to-top {
-  right: calc((100vw - 950px) / 2 - 99px);
+  right: calc((100vw - 800px) / 2 - 99px);
   top: 45%;
   width: 100px;
 }
 .to-bottom {
-  right: calc((100vw - 950px) / 2 - 99px);
+  right: calc((100vw - 800px) / 2 - 99px);
   bottom: 45%;
   width: 100px;
 }
