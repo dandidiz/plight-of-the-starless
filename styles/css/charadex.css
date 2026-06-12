@@ -763,8 +763,8 @@ html {
   filter: hue-rotate(45deg);
 }
 html.active {
-  filter: hue-rotate(var(--hue-shift)) ;
-  transition: filter 1.5s ease;
+  filter: hue-rotate(var(--hue-shift)) brightness(var(--brightness)) contrast(var(--contrast)) ;
+  transition: filter 1s ease;
 }
 
 #header {
