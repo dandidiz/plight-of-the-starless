@@ -979,7 +979,7 @@ hr.star {
   position: relative;
   border-top: 0px;
   height: var(--iconSize);
-  width: 80%;
+  width: 100%;
   margin: 1em auto 1em auto;
   opacity: 1;
   filter: invert(81%) sepia(11%) saturate(1272%) hue-rotate(164deg) brightness(88%) contrast(87%);
