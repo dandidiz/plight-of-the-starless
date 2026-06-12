@@ -872,11 +872,6 @@ p:last-child {
 #gallery-card {
   overflow: scroll;
 }
-@media (min-width: 768px) {
-  #gallery-card {
-    margin: .5rem 1rem;
-  }
-}
 
 #profile-card .card-body {
   overflow: visible;
