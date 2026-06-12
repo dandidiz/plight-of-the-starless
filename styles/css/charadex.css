@@ -368,6 +368,7 @@ body {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* ------------------------------------------------------------- */
@@ -763,7 +764,7 @@ html {
   filter: hue-rotate(45deg);
 }
 html.active {
-  filter: hue-rotate(var(--hue-shift)) brightness(var(--brightness)) contrast(var(--contrast)) ;
+  filter: hue-rotate(var(--hue-shift)) brightness(var(--brightness)) contrast(var(--contrast));
   transition: filter 1s ease;
 }
 
