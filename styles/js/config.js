@@ -137,7 +137,7 @@ charadex.page.prompts = {
   search: {
     toggle: true,
     filterToggle: false,
-    parameters: ['Title']
+    parameters: ['All', 'Title', 'Summary', 'Description']
   },
 
   prevNext: {
@@ -354,8 +354,10 @@ charadex.page.player = {
   },
 
   filters: {
-    toggle: false,
-    parameters: {}
+    toggle: true,
+    parameters: {
+      'Role': ['Mod', 'Creator', 'Player']
+    }
   },
 
   fauxFolder: {
@@ -367,7 +369,7 @@ charadex.page.player = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['Username']
+    parameters: ['All', 'Username', 'Description']
   },
 
   prevNext: {
