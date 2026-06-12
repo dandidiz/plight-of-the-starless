@@ -318,8 +318,8 @@ h6 { font-size: var(--cd-header-min-size); }
   --bs-border-color-translucent: rgba(var(--bs-info-rgb), var(--bs-border-opacity));
 
   --bs-border-radius: 1rem;
-  --bs-border-radius-sm: 1rem;
-  --bs-border-radius-lg: 1rem;
+  --bs-border-radius-sm: .25rem;
+  --bs-border-radius-lg: .5rem;
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
