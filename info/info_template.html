@@ -47,23 +47,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Rajdhani:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body id="charadex-body" class="d-flex">
+<body id="charadex-body">
   <!-- ----------------------------------------------------------------- -->
   <!-- Header                                                            -->
   <!-- ----------------------------------------------------------------- -->
-  <div class="load-html" data-source="/plight-of-the-starless/includes/header.html"></div>
+  <div id="header"></div>
+  <div class="loading text-primary"><i class="fa-solid fa-hourglass fa-spin fa-spin-reverse"></i></div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- Main Container                                                    -->
   <!-- ----------------------------------------------------------------- -->
-  <div id="main-content" class="container d-flex order-md-2 order-3">
-    <div id="main-card" class="card bg-body-tertiary flex-grow-1 mx-md-3 mx-0">
-
-      <!-- ----------------------------------------------------------------- -->
-      <!-- Content                                                           -->
-      <!-- ----------------------------------------------------------------- -->
-      <div class="card-body">
-
+  <div class="d-flex flex-md-row flex-column justify-content-center softload">
+    <div class="load-html" data-source="/plight-of-the-starless/includes/sidebar.html"></div>
+    <div id="main-content">
+      <div class="card card-body border-0 mb-4 p-4">
+        <!-- ----------------------------------------------------------------- -->
+        <!-- Content                                                           -->
+        <!-- ----------------------------------------------------------------- -->
         <h1 id="info"><a href="#info">Info</a></h1>
 
         <p>
@@ -667,14 +667,12 @@
             </span>
           </div>
         </div>
-
-      </div> 
-      <!-- --------------------------------------------------------------- -->
-      <!-- End of Content                                                  -->
-      <!-- --------------------------------------------------------------- -->
-       
-    </div> <!-- End of main-card -->
-  </div> <!-- End of main-content -->
+        <!-- --------------------------------------------------------------- -->
+        <!-- End of Content                                                  -->
+        <!-- --------------------------------------------------------------- -->
+      </div> <!-- End of card -->
+    </div> <!-- End of main-content -->
+  </div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- Footer                                                            -->
@@ -699,6 +697,7 @@
 
   <!-- Charadex Script -->
   <script src="/plight-of-the-starless/styles/js/pages/base.js" type="module"></script>
+  <script src="/plight-of-the-starless/styles/js/pages/index.js" type="module"></script>
 
   <!-- Tooltips -->
   <script>
