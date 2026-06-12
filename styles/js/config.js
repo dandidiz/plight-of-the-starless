@@ -27,10 +27,7 @@ charadex.sheet = {
 
   pages: { // these should match your sheet names, but in lowercase
     masterlist:    'characters',
-    masterlistLog: 'character log',
     player:        'players',
-    inventoryLog:  'inventory log',
-    items:         'items',
     prompts:       'prompts',
     lore:          'lore',
   },
@@ -39,7 +36,6 @@ charadex.sheet = {
     roles: ['Story Character', 'Player Character', 'Side Character'],
     statuses: ['Active', 'Out of Date', 'Retired', 'Dead', 'WIP'],
     category: ['Witch', 'Knight', 'Mundane'],
-    itemTypes: ['Currency', 'Voucher', 'Achievement', 'Gatcha', 'Misc'],
   }
 
 }
@@ -101,61 +97,6 @@ charadex.sheet = {
 /*
 /* ==================================================================== */
 charadex.page = {};
-
-/* --------------------------------------------------------------- */
-/* items.html
-/* --------------------------------------------------------------- */
-charadex.page.items = {
-
-  sheetPage: charadex.sheet.pages.items,
-  sitePage: 'items',
-  dexSelector: 'item',
-  profileProperty: 'item',
-
-  sort: {
-    toggle: true,
-    sortProperty: 'sort',
-    order: 'asc',
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 24,
-  },
-
-  filters: {
-    toggle: false,
-    parameters: {
-      'Type': charadex.sheet.options.itemTypes,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Type',
-    parameters: charadex.sheet.options.itemTypes,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Item', 'Description']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-  fillBlanks: [],
-  
-  markdownColumns: [],
-
-  badgeColumns: {},
-
-};
-
 
 /* --------------------------------------------------------------- */
 /* prompts.html
@@ -380,65 +321,10 @@ charadex.page.masterlist = {
     }
   },
 
-  relatedData: {
-
-    [charadex.sheet.pages.masterlistLog]: {
-
-      sheetPage: charadex.sheet.pages.masterlistLog,
-      primaryProperty: 'name', // The key of the field we are SEARCHING BY in primary array
-      relatedProperty: 'name', // The name of the field we are SEARCHING IN in secondary array
-      dexSelector: 'log',
-      profileProperty: 'name', // The ID of the secondary field
-      profileToggle: false,
-
-      sort: {
-        toggle: true,
-        sortProperty: 'timestamp',
-        order: 'desc',
-        parameters: []
-      },
-
-      pagination: {
-        toggle: true,
-        bottomToggle: true,
-        amount: 12,
-      },
-
-    }
-
-  },
+  relatedData: {},
 
   // This is a special config for their inventory
-  characterConfig: {
-
-    sheetPage: charadex.sheet.pages.items,
-    sitePage: 'items',
-    dexSelector: 'item',
-    profileProperty: 'item',
-    profileToggle: false,
-
-    sort: {
-      toggle: true,
-      sortProperty: 'sort',
-      order: 'asc',
-      parametersKey: 'type', 
-      parameters: [charadex.sheet.options.itemTypes]
-    },
-
-    search: {
-      toggle: false,
-      filterToggle: false,
-      parameters: ['Item']
-    },
-
-    filters: {
-      toggle: false,
-      parameters: {
-        'Type': charadex.sheet.options.itemTypes,
-      }
-    },
-
-  }
+  characterConfig: {}
 
 };
 
@@ -512,32 +398,7 @@ charadex.page.player = {
 
   // Related Data
   relatedData: {
-
-    [charadex.sheet.pages.inventoryLog]: {
-
-      sheetPage: charadex.sheet.pages.inventoryLog,
-      primaryProperty: 'username', // The key of the field we are SEARCHING BY in primary array
-      relatedProperty: 'username', // The name of the field we are SEARCHING IN in secondary array
-      dexSelector: 'log',
-      profileProperty: 'username', // The ID of the secondary field
-      profileToggle: false,
-
-      sort: {
-        toggle: true,
-        sortProperty: 'timestamp',
-        order: 'desc',
-        parameters: []
-      },
-
-      pagination: {
-        toggle: true,
-        bottomToggle: true,
-        amount: 12,
-      },
-
-    },
     
-
     [charadex.sheet.pages.masterlist]: {
 
       // This imports the config from the masterlist
@@ -556,38 +417,8 @@ charadex.page.player = {
 
   },
 
-  
   // This is a special config for their inventory
-  playerConfig: {
-
-    sheetPage: charadex.sheet.pages.items,
-    sitePage: 'items',
-    dexSelector: 'item',
-    profileProperty: 'item',
-    profileToggle: false,
-
-    sort: {
-      toggle: true,
-      sortProperty: 'sort',
-      order: 'asc',
-      parametersKey: 'type', 
-      parameters: [charadex.sheet.options.itemTypes]
-    },
-
-    search: {
-      toggle: true,
-      filterToggle: false,
-      parameters: ['Item']
-    },
-
-    filters: {
-      toggle: false,
-      parameters: {
-        'Type': charadex.sheet.options.itemTypes,
-      }
-    },
-
-  }
+  playerConfig: {}
 
 };
 

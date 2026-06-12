@@ -22,26 +22,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         let profile = listData.profileArray[0];
 
-        // Inventory
-        let inventoryData = await charadex.manageData.readInventoryLog(profile.characterlog);
-
-        charadex.initialize.groupGallery(
-          charadex.page.masterlist.characterConfig,
-          inventoryData,
-          'type',
-          charadex.url.getPageUrl('items')
-        );
-        console.log('Initialized inventory gallery!');
-
-        // Logs
-        if (charadex.tools.checkArray(profile.characterlog)) {
-          let logs = await charadex.initialize.page(
-            profile.characterlog,
-            charadex.page.masterlist.relatedData['character log']
-          );
-          console.log('Initialized related logs!');
-        }
-
         // Set the player url
         let pageUrl = charadex.url.getPageUrl(charadex.page.player.sitePage);
         $('.playerlink').attr('href', charadex.url.addUrlParameters(pageUrl, { profile: profile.player }));
