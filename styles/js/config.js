@@ -38,7 +38,7 @@ charadex.sheet = {
   options: { // available options for values in your sheets used in search filters
     roles: ['Story Character', 'Player Character', 'Side Character'],
     statuses: ['Active', 'Out of Date', 'Retired', 'Dead', 'WIP'],
-    category: ['All', 'One', 'Two', 'Three', 'Four', 'Five'],
+    category: ['All', 'Witch', 'Knight', 'Mundane'],
     subcategory: ['All', 'One', 'Two', 'Three', 'Four', 'Five'],
     itemTypes: ['All', 'Currency', 'Voucher', 'Achievement', 'Gatcha', 'Misc'],
   }
@@ -219,11 +219,9 @@ charadex.page.prompts = {
 
   badgeColumns: {
     category: {               // name of the column
-      one: 'bg-one',      // value: 'style'
-      two: 'bg-two',      // value: 'style'
-      three: 'bg-three',  // value: 'style'
-      four: 'bg-four',     // value: 'style'
-      five: 'bg-five',      // value: 'style'
+      witch: 'bg-witch',      // value: 'style'
+      knight: 'bg-knight',      // value: 'style'
+      mundane: 'bg-mundane',  // value: 'style'
     },
   },
 
@@ -370,12 +368,10 @@ charadex.page.masterlist = {
   ],
   
   badgeColumns: {
-    category: {
-      one: 'bg-one',
-      two: 'bg-two',
-      three: 'bg-three',
-      four: 'bg-four',
-      five: 'bg-five',
+    category: {               // name of the column
+      witch: 'bg-witch',      // value: 'style'
+      knight: 'bg-knight',      // value: 'style'
+      mundane: 'bg-mundane',  // value: 'style'
     },
     pronouns: {
       hehim: 'bg-hehim',
