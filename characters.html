@@ -80,85 +80,86 @@
   <div class="d-flex flex-md-row flex-column justify-content-center softload">
     <div class="load-html" data-source="/plight-of-the-starless/includes/sidebar.html"></div>
     <div id="main-content">
-      <div id="charadex-gallery">
+      <h1 class="page-title"><a href="/plight-of-the-starless/characters">Characters</a></h1>
 
-        <!-- ----------------------------------------------------------------- -->
-        <!-- UI                                                                -->
-        <!-- ----------------------------------------------------------------- -->
-        <div id="search-options" class="mx-md-3 mx-0 mb-2">
-
-          <!-- Faux Folders -->
-          <div style="display:none;" id="charadex-folder-container">
-            <div class="row mb-2" id="charadex-folders"></div>
-            <!-- Button Item -->
-            <div style="display:none;">
-              <div class="col-md-4 col-6" id="charadex-folder">
-                <a class="btn btn-primary d-block" href=""></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Filters -->
-          <div style="display:none;" id="charadex-filter-container">
-            <div class="row mb-2 gy-2" id="charadex-filters"></div>
-            <!-- Filter Item -->
-            <div style="display: none;">
-              <div class="col-md-6 col-12" id="charadex-filter">
-                <label class="px-2"></label>
-                <select class="form-control" multiple data-actions-box="true" data-icon-base="fa-solid"
-                  data-tick-icon="fa-check"></select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Search -->
-          <div style="display:none;" id="charadex-search-container">
-            <div class="row mb-2">
-              <!-- Search Filter -->
-              <div class="col-md-4 col-6" style="display: none;">
-                <label class="px-2" for="charadex-search-filter">Search for</label>
-                <select id="charadex-search-filter" class="form-control form-select"
-                  aria-label="Select search parameter."></select>
-              </div>
-              <!-- Search Bar -->
-              <div class="col">
-                <label class="px-2" for="charadex-search">Search</label>
-                <input class="form-control search" type="search" placeholder="Search" id="charadex-search"
-                  aria-label="Input search.">
-              </div>
-            </div>
-          </div>
+      <div id="charadex-gallery" class="card border-0 mb-4 p-4">
+        <div id="main-card" class="card-body star-border">
 
           <!-- ----------------------------------------------------------------- -->
-          <!-- Pagination                                                        -->
+          <!-- UI                                                                -->
           <!-- ----------------------------------------------------------------- -->
-          <div style="display: none;" class="charadex-pagination-container">
-            <nav class="d-flex justify-content-center align-items-center">
-              <a class="btn-prev px-1"><i class="fa fa-chevron-left"></i></a>
-              <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center mb-0"></ul>
-              <a class="btn-next px-1"><i class="fa fa-chevron-right"></i></a>
-            </nav>
-          </div>
+          <div id="search-options" class="mx-md-3 mx-0 mb-2">
 
-          <!-- ----------------------------------------------------------------- -->
-          <!-- Prev & Next Topbar                                                -->
-          <!-- ----------------------------------------------------------------- -->
-          <div style="display: none;" id="charadex-prevnext-container">
-            <div class="row px-2 text-uppercase">
-              <div class="col-6 px-1">
-                <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
-              </div>
-              <div class="col-6 px-1 text-end order-md-1">
-                <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
+            <!-- Faux Folders -->
+            <div style="display:none;" id="charadex-folder-container">
+              <div class="row mb-2" id="charadex-folders"></div>
+              <!-- Button Item -->
+              <div style="display:none;">
+                <div class="col-md-4 col-6" id="charadex-folder">
+                  <a class="btn btn-primary d-block" href=""></a>
+                </div>
               </div>
             </div>
-          </div>
 
-        </div> <!-- End of ui -->
+            <!-- Filters -->
+            <div style="display:none;" id="charadex-filter-container">
+              <div class="row mb-2 gy-2" id="charadex-filters"></div>
+              <!-- Filter Item -->
+              <div style="display: none;">
+                <div class="col-md-6 col-12" id="charadex-filter">
+                  <label class="px-2"></label>
+                  <select class="form-control" multiple data-actions-box="true" data-icon-base="fa-solid"
+                    data-tick-icon="fa-check"></select>
+                </div>
+              </div>
+            </div>
 
-        <h1 class="page-title"><a href="/plight-of-the-starless/characters">Characters</a></h1>
-        <div id="gallery-card" class="card border-0 mb-4 p-4">
-          <div class="card-body star-border">
+            <!-- Search -->
+            <div style="display:none;" id="charadex-search-container">
+              <div class="row mb-2">
+                <!-- Search Filter -->
+                <div class="col-md-4 col-6" style="display: none;">
+                  <label class="px-2" for="charadex-search-filter">Search for</label>
+                  <select id="charadex-search-filter" class="form-control form-select"
+                    aria-label="Select search parameter."></select>
+                </div>
+                <!-- Search Bar -->
+                <div class="col">
+                  <label class="px-2" for="charadex-search">Search</label>
+                  <input class="form-control search" type="search" placeholder="Search" id="charadex-search"
+                    aria-label="Input search.">
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------------------------------------------------------------- -->
+            <!-- Pagination                                                        -->
+            <!-- ----------------------------------------------------------------- -->
+            <div style="display: none;" class="charadex-pagination-container">
+              <nav class="d-flex justify-content-center align-items-center">
+                <a class="btn-prev px-1"><i class="fa fa-chevron-left"></i></a>
+                <ul class="pagination charadex-pagination charadex-pagination-top justify-content-center mb-0"></ul>
+                <a class="btn-next px-1"><i class="fa fa-chevron-right"></i></a>
+              </nav>
+            </div>
+
+            <!-- ----------------------------------------------------------------- -->
+            <!-- Prev & Next Topbar                                                -->
+            <!-- ----------------------------------------------------------------- -->
+            <div style="display: none;" id="charadex-prevnext-container">
+              <div class="row px-2 text-uppercase">
+                <div class="col-6 px-1">
+                  <a id="entryPrev" href=""><i class="fas fa-chevron-left me-2"></i><b><span></span></b></a>
+                </div>
+                <div class="col-6 px-1 text-end order-md-1">
+                  <a id="entryNext" href=""><b><span></span></b><i class="fas fa-chevron-right ms-2"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End of ui -->
+
+          <div id="gallery-card">
             <!-- ----------------------------------------------------------------- -->
             <!-- List Items Render Here                                            -->
             <!-- ----------------------------------------------------------------- -->
@@ -175,8 +176,8 @@
               </nav>
             </div>
 
-          </div>
-        </div> <!-- End of gallery-card -->
+          </div> <!-- End of gallery-card -->
+        </div> 
       </div> <!-- End of charadex-gallery -->
     </div> <!-- End of main-content -->
   </div>
