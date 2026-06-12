@@ -79,6 +79,18 @@ charadex.tools = {
       console.log('✅');
     }, timeout+100);
   },
+
+  /**
+   * Check if the path is in the current URL
+   */
+  setActiveLink() {
+    const current = window.location.href;
+    document.querySelectorAll("#sidenav > .nav-link").forEach(function(e){ 
+        if(e.href.includes(current)){
+          elem.classList.add("active");
+        }
+    });
+  },
   
   /**
    * Update meta information with config.js settings.
