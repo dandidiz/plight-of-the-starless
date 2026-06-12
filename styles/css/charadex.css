@@ -92,6 +92,8 @@
   --bs-teal: #20c997;
   --bs-cyan: #85BBD3;
 
+  --hue-shift: 0deg;
+
 /* ************************************************************* */
 /*                    2. Color Calculations
 /* ************************************************************* */
@@ -759,7 +761,7 @@ html {
   filter: hue-rotate(45deg);
 }
 html.active {
-  filter: none;
+  filter: hue-rotate(calc(45deg - var(--hue-shift)));
   transition: filter 1.5s ease;
 }
 

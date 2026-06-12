@@ -65,4 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   charadex.tools.loadPage('html', 500, '')
 
+  window.addEventListener("scroll", () => {
+    let scrollPosition = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    document.documentElement.style.setProperty("--hue-shift", `${360 - scrollPosition * 360}deg`);
+  });
+
 });
