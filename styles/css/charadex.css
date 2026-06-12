@@ -734,7 +734,12 @@ ol li::marker {
 
 /* Specifically for the body */
 #charadex-body {
-  margin-top: 60px;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+#charadex-body {
+  margin-top: 20px;
+}
 }
 
 /* ------------------------------------------------------------- */
@@ -912,6 +917,9 @@ p:last-child {
 /* ------------------------------------------------------------- */
 /* Custom
 /* ------------------------------------------------------------- */
+#sidebar, #stars {
+  width: 200px;
+}
 /* the star divider in the sidebar */
 hr.star-nav {
   background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 70%);
