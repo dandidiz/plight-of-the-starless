@@ -762,7 +762,7 @@ html {
   filter: hue-rotate(45deg);
 }
 html.active {
-  filter: hue-rotate(var(--hue-shift)) brightness(var(--brightness));
+  filter: hue-rotate(var(--hue-shift)) ;
   transition: filter 1.5s ease;
 }
 
