@@ -338,7 +338,7 @@ charadex.page.masterlist = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
   
   fillBlanks: [
