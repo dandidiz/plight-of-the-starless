@@ -451,7 +451,7 @@ charadex.page.player = {
 
   // Dex Set Up
   sheetPage: charadex.sheet.pages.player,
-  sitePage: 'players',
+  sitePage: 'collaborators',
   dexSelector: 'player',
   profileProperty: 'username',
 
