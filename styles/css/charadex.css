@@ -502,7 +502,7 @@ body {
   }
 
   #main-card {
-    max-height: 65vh;
+    height: 65vh;
   }
 }
 /* Small container for more compact view */
