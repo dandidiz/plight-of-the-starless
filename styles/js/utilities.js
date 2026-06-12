@@ -87,11 +87,14 @@ charadex.tools = {
    */
   setActiveLink(parentId = 'sidebar', childClass = '.nav-link') {
     const current = window.location.href;
-    document.getElementById(parentId).querySelectorAll(childClass).forEach(function(e){ 
+    let parent = document.getElementById(parentId);
+    if (parent) {
+      parent.querySelectorAll(childClass).forEach(function(e){ 
         if(e.href.includes(current)){
           elem.classList.add('active');
         }
-    });
+      });
+    }
   },
   
   /**
