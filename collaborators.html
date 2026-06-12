@@ -81,7 +81,7 @@
     <div class="load-html" data-source="/plight-of-the-starless/includes/sidebar.html"></div>
     <div id="main-content">
       <div class="d-flex mx-4">
-        <h1 class="page-title"><a href="/plight-of-the-starless/characters">Characters</a></h1>
+        <h1 class="page-title"><a href="/plight-of-the-starless/players">Players</a></h1>
         <a class="btn ms-auto mt-auto text-end text-light" data-bs-toggle="tooltip" data-bs-title="go home"
           href="/plight-of-the-starless">
           <h1 class="ms-auto mt-auto text-end text-light">
@@ -97,9 +97,6 @@
           <!-- UI                                                                -->
           <!-- ----------------------------------------------------------------- -->
           <div id="search-options" class="mx-md-3 mx-0 mb-2">
-
-            <!-- Title -->
-            <h1 class="text-center"><a href="/plight-of-the-starless/players">Players</a></h1>
 
             <!-- Faux Folders -->
             <div style="display:none;" id="player-folder-container">
@@ -241,15 +238,15 @@
         <div class="col px-0">
           <hr class="border-info">
         </div>
-        <div class="col-auto">
+        <div class="col-auto d-flex flex-column align-items-center">
           <h1 class="m-0"><a class="username sociallink" target="_blank"></a></h1>
+          <div class="rolebadge"></div>
         </div>
         <div class="col px-0">
           <hr class="border-info">
         </div>
-        <div class="col d-flex align-items-center">
-          <div class="rolebadge p-1"></div>
-          <div class="pronounsbadge p-1"></div>
+        <div class="col-auto">
+          <div class="d-flex align-items-center pronounsbadge"></div>
         </div>
       </div>
 
