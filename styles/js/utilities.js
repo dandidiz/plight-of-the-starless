@@ -82,12 +82,14 @@ charadex.tools = {
 
   /**
    * Check if the path is in the current URL
+   * @param {String} parentId The id of the parent navigation element.
+   * @param {String} childClass The class of the child elements.
    */
-  setActiveLink() {
+  setActiveLink(parentId = 'sidebar', childClass = '.nav-link') {
     const current = window.location.href;
-    document.querySelectorAll("#sidebar > .nav-link").forEach(function(e){ 
+    document.getElementById(parentId).querySelectorAll(childClass).forEach(function(e){ 
         if(e.href.includes(current)){
-          elem.classList.add("active");
+          elem.classList.add('active');
         }
     });
   },
