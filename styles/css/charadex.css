@@ -576,6 +576,10 @@ body {
   background-color: var(--bs-info);
   color: var(--bs-light);
 }
+#sidebar .nav .nav-item .nav-link {
+  background-color: transparent;
+}
+
 .nav-pills .nav-link.active::before {
   content: "✦";
 }
