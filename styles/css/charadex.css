@@ -93,6 +93,7 @@
   --bs-cyan: #85BBD3;
 
   --hue-shift: 0deg;
+  --brightness: 100%;
 
 /* ************************************************************* */
 /*                    2. Color Calculations
@@ -761,7 +762,7 @@ html {
   filter: hue-rotate(45deg);
 }
 html.active {
-  filter: hue-rotate(calc(45deg - var(--hue-shift)));
+  filter: hue-rotate(var(--hue-shift)) brightness(var(--brightness));
   transition: filter 1.5s ease;
 }
 
