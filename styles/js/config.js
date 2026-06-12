@@ -38,8 +38,8 @@ charadex.sheet = {
   options: { // available options for values in your sheets used in search filters
     roles: ['Story Character', 'Player Character', 'Side Character'],
     statuses: ['Active', 'Out of Date', 'Retired', 'Dead', 'WIP'],
-    category: ['All', 'Witch', 'Knight', 'Mundane'],
-    itemTypes: ['All', 'Currency', 'Voucher', 'Achievement', 'Gatcha', 'Misc'],
+    category: ['Witch', 'Knight', 'Mundane'],
+    itemTypes: ['Currency', 'Voucher', 'Achievement', 'Gatcha', 'Misc'],
   }
 
 }
