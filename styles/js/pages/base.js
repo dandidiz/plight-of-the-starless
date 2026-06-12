@@ -39,9 +39,8 @@ function setActiveLink(parentId = 'sidebar', childClass = '.nav-link') {
   let parent = document.getElementById(parentId);
   if (parent) {
     parent.querySelectorAll(childClass).forEach(function(e){ 
-      if(e.href.includes(current)){
+      if(current.includes(e.href)){
         e.classList.add('active');
-        e.classList.add('disabled');
       }
     });
   }
