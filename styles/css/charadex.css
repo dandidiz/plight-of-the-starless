@@ -747,6 +747,13 @@ ol li::marker {
   opacity: 1;
   transition: opacity 0.2s ease;
 }
+#charadex-body {
+  filter: hue-rotate(45deg);
+}
+#charadex-body.active {
+  filter: none;
+  transition: filter 0.2s ease;
+}
 
 #header {
   margin-top: 0;
