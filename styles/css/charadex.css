@@ -313,8 +313,9 @@ h6 { font-size: var(--cd-header-min-size); }
 /* ------------------------------------------------------------- */
   --bs-border-width: 3px;
   --bs-border-style: solid;
-  --bs-border-color: var(--bs-cyan);
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-color: var(--bs-info);
+  --bs-border-opacity: 1;
+  --bs-border-color-translucent: rgba(var(--bs-info-rgb), var(--bs-border-opacity));
 
   --bs-border-radius: 1rem;
   --bs-border-radius-sm: 1rem;
@@ -379,24 +380,16 @@ body {
   color: var(--bs-white) !important;
 }
 
-.bg-one {
-  background-color: #143c81 !important;
+.bg-witch {
+  background-color: #a00a73 !important;
   color: #ffffff !important;
 }
-.bg-two {
-  background-color: #801a1a !important;
+.bg-knight {
+  background-color: #414141 !important;
   color: #ffffff !important;
 }
-.bg-three {
+.bg-mundane {
   background-color: #1a7a1e !important;
-  color: #ffffff !important;
-}
-.bg-four {
-  background-color: #9ab2df !important;
-  color: #252525 !important;
-}
-.bg-five {
-  background-color: #531a94 !important;
   color: #ffffff !important;
 }
 
@@ -443,7 +436,7 @@ body {
 /* ------------------------------------------------------------- */
 @media (min-width: 992px) {
   body::-webkit-scrollbar-track {
-    background-color: rgba(var(--bs-light), 0.2);
+    background-color: rgba(var(--bs-light-rgb), 0.2);
     border-width: 0px !important;
   }
 
@@ -575,7 +568,8 @@ body {
 }
 
 .nav-pills .nav-item .nav-link.active {
-  background-color: transparent;
+  background-color: var(--bs-info);
+  color: var(--bs-light);
 }
 .nav-pills .nav-link.active::before {
   content: "✦";
@@ -1052,6 +1046,19 @@ blockquote.star.star-top {
 }
 blockquote.star.star-bottom {
   --starpos: 100%
+}
+
+/* star icon */
+span.star {
+  background-color: currentColor;
+  -webkit-mask: url("/plight-of-the-starless/assets/star.svg") no-repeat 50% 50%;
+  mask: url("/plight-of-the-starless/assets/star.svg") no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  content: "";
+  height: 1em;
+  width: 1em;
+  display: inline-block;
 }
 
 .star-border {
