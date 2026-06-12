@@ -752,7 +752,7 @@ html {
 }
 html.active {
   filter: none;
-  transition: filter 0.2s ease;
+  transition: filter 0.5s ease;
 }
 
 #header {
