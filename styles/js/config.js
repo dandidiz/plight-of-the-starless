@@ -118,7 +118,7 @@ charadex.page.prompts = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 12,
+    amount: 4,
   },
 
   filters: {
@@ -188,7 +188,7 @@ charadex.page.lore = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 12,
+    amount: 4,
   },
 
   filters: {
@@ -250,7 +250,7 @@ charadex.page.masterlist = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 12,
+    amount: 8,
   },
 
   filters: {
@@ -350,7 +350,7 @@ charadex.page.player = {
   pagination: {
     toggle: true,
     bottomToggle: true,
-    amount: 24,
+    amount: 10,
   },
 
   filters: {
