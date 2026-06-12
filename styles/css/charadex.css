@@ -492,6 +492,7 @@ body {
 
 #main-card {
   overflow: scroll;
+  scroll-behavior: smooth;
   padding: 1em 1.5em 1em .5em;
 }
 
