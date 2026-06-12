@@ -85,7 +85,7 @@ charadex.tools = {
    */
   setActiveLink() {
     const current = window.location.href;
-    document.querySelectorAll("#sidenav > .nav-link").forEach(function(e){ 
+    document.querySelectorAll("#sidebar > .nav-link").forEach(function(e){ 
         if(e.href.includes(current)){
           elem.classList.add("active");
         }
