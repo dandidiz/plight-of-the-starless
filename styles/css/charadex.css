@@ -1036,6 +1036,18 @@ blockquote.star.star-bottom {
   border-image-width: 50px;
 }
 
+.page-title {
+  font-size: 4rem;
+  color: var(--bs-dark);
+  text-transform: none;
+  position: relative;
+  bottom: -2.25em;
+  left: .5em;
+  height: 190px;
+  width: 100%;
+  margin-top: -60px;
+  z-index: 10;
+}
 .script-title {
   background-image: url("/plight-of-the-starless/assets/script-title.png");
   background-position: left top;
