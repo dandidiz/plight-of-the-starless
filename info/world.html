@@ -51,31 +51,33 @@
   <!-- ----------------------------------------------------------------- -->
   <!-- Header                                                            -->
   <!-- ----------------------------------------------------------------- -->
-  <div class="load-html" data-source="/plight-of-the-starless/includes/header.html"></div>
+  <div id="header"></div>
+  <div class="loading text-primary"><i class="fa-solid fa-hourglass fa-spin fa-spin-reverse"></i></div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- Main Container                                                    -->
   <!-- ----------------------------------------------------------------- -->
-  <div id="main-content" class="container d-flex order-md-2 order-3">
-    <div id="main-card" class="card bg-body-tertiary flex-grow-1 mx-md-3 mx-0">
+  <div class="d-flex flex-md-row flex-column justify-content-center softload">
+    <div class="load-html" data-source="/plight-of-the-starless/includes/sidebar.html"></div>
+    <div id="main-content">
+      <h1 class="page-title">World</h1>
 
-      <!-- ----------------------------------------------------------------- -->
-      <!-- Content                                                           -->
-      <!-- ----------------------------------------------------------------- -->
-      <div class="card-body">
-        <h1 id="setting"><a href="#setting">Setting</a></h1>
+      <div class="card border-0 mb-4 p-4">
+        <div id="main-card" class="card-body star-border">
+          <!-- ----------------------------------------------------------------- -->
+          <!-- Content                                                           -->
+          <!-- ----------------------------------------------------------------- -->
+          <p class="text-muted">
+            Explain the conceit of the group's premise here.
+          </p>
 
-        <p class="text-muted">
-          Setting information can go here.
-        </p>
-
-      </div>
-      <!-- --------------------------------------------------------------- -->
-      <!-- End of Content                                                  -->
-      <!-- --------------------------------------------------------------- -->
-       
-    </div> <!-- End of main-card -->
-  </div> <!-- End of main-content -->
+          <!-- --------------------------------------------------------------- -->
+          <!-- End of Content                                                  -->
+          <!-- --------------------------------------------------------------- -->
+        </div>
+      </div> <!-- End of card -->
+    </div> <!-- End of main-content -->
+  </div>
 
   <!-- ----------------------------------------------------------------- -->
   <!-- Footer                                                            -->
@@ -100,7 +102,7 @@
 
   <!-- Charadex Script -->
   <script src="/plight-of-the-starless/styles/js/pages/base.js" type="module"></script>
-
+  <script src="/plight-of-the-starless/styles/js/pages/index.js" type="module"></script>
 
 </body>
 
