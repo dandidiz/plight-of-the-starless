@@ -49,20 +49,6 @@ charadex.tools = {
   },
 
   /**
-   * Load other .html files via include.
-   * Includes replace the entire div.
-   */
-  loadIncludedFiles() {
-    $(".load-html").each(function () {
-      const target = $(this);
-      $.get(this.dataset.source, function (data) {
-        target.replaceWith(data);
-        console.log("Loaded HTML file:", target);
-      });
-    });
-  },
-
-  /**
    * Show/hide elements after page load is complete.
    * @param {String} showClass The class of items to show after load.
    * @param {Number} timeout How long to wait before loading.
@@ -78,23 +64,6 @@ charadex.tools = {
       $(hideClass).hide();
       console.log('✅');
     }, timeout+100);
-  },
-
-  /**
-   * Check if the path is in the current URL
-   * @param {String} parentId The id of the parent navigation element.
-   * @param {String} childClass The class of the child elements.
-   */
-  setActiveLink(parentId = 'sidebar', childClass = '.nav-link') {
-    const current = window.location.href;
-    let parent = document.getElementById(parentId);
-    if (parent) {
-      parent.querySelectorAll(childClass).forEach(function(e){ 
-        if(e.href.includes(current)){
-          e.classList.add('active');
-        }
-      });
-    }
   },
   
   /**

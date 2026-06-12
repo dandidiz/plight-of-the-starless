@@ -563,7 +563,7 @@ body {
   padding-left: 0 !important;
 }
 
-.nav-pills .nav-link.active {
+.nav-pills .nav-item .nav-link.active {
   background-color: transparent;
   color: var(--bs-light);
 }
