@@ -375,6 +375,11 @@ body {
 /* For example, if "Good Guys" is the category name,
 /* '.bg-goodguys' is the badge name.
 /* ------------------------------------------------------------- */
+.badge {
+  text-transform: uppercase;
+  margin-bottom: .3em;
+}
+
 .bg-all {
   background-color: var(--bs-secondary) !important;
   color: var(--bs-white) !important;
@@ -1056,9 +1061,10 @@ span.star {
   -webkit-mask-size: contain;
   mask-size: contain;
   content: "";
+  display: inline-block;
   height: 1em;
   width: 1em;
-  display: inline-block;
+  vertical-align: -0.3em;
 }
 
 .star-border {
