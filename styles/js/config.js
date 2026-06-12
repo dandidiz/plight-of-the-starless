@@ -29,7 +29,7 @@ charadex.sheet = {
     masterlist:    'characters',
     player:        'players',
     prompts:       'prompts',
-    lore:          'lore',
+    lore:          'timeline',
   },
 
   options: { // available options for values in your sheets used in search filters
@@ -136,7 +136,7 @@ charadex.page.prompts = {
 
   search: {
     toggle: true,
-    filterToggle: false,
+    filterToggle: true,
     parameters: ['All', 'Title', 'Summary', 'Description']
   },
 
