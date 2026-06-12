@@ -10,7 +10,7 @@ import { charadex } from '../utilities.js';
  * Load other .html files via include.
  * Includes replace the entire div.
  */
-async function loadIncludedFiles() {
+function loadIncludedFiles() {
   $(".load-html").each(function () {
     const target = $(this);
     $.get(this.dataset.source, function (data) {
@@ -44,7 +44,10 @@ function setActiveLink(parentId = 'sidebar', childClass = '.nav-link') {
 document.addEventListener("DOMContentLoaded", () => {
   console.log('======== Running base.js script ========');
   console.log('loading included files...');
-  await loadIncludedFiles();
+  loadIncludedFiles();
+  console.log('✅');
+  
+  console.log('setting active links...');
   setActiveLink();
   console.log('✅');
 
