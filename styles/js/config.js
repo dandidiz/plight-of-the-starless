@@ -233,7 +233,7 @@ charadex.page.prompts = {
 charadex.page.lore = {
 
   sheetPage: charadex.sheet.pages.lore,
-  sitePage: 'lore',
+  sitePage: 'timeline',
   dexSelector: 'charadex',
   profileProperty: 'id',
 
