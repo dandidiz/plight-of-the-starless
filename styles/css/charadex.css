@@ -626,6 +626,7 @@ body {
 /* Various Text Styling
 /* ------------------------------------------------------------- */
 hr {
+  opacity: var(--bs-border-opacity);
   border-radius: var(--bs-border-radius);
 }
 
