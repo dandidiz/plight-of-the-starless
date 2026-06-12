@@ -15,8 +15,4 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log('updating meta...')
   charadex.tools.updateMeta();
   console.log('✅');
-
-  console.log('checking sidenav for active links')
-  charadex.tools.setActiveLink();
-  console.log('✅');
 });
