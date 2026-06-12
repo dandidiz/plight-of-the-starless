@@ -145,7 +145,7 @@ charadex.page.items = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
 
   fillBlanks: [],
@@ -200,7 +200,7 @@ charadex.page.prompts = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
   
   fillBlanks: [
@@ -485,7 +485,7 @@ charadex.page.player = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
 
   fillBlanks: [],
