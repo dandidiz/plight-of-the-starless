@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     let scrollPosition = window.scrollY / (document.body.scrollHeight - window.innerHeight);
     document.documentElement.style.setProperty("--hue-shift", `${scrollPosition * 45}deg`);
-    document.documentElement.style.setProperty("--brightness", `${100 - scrollPosition * 100}%`);
   });
 
   $('[data-bs-toggle="tooltip"]').tooltip();
