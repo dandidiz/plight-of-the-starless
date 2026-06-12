@@ -722,15 +722,6 @@ ol li::marker {
   transition: opacity 0.2s ease;
 }
 
-/* Specifically for the body */
-#charadex-body {
-  display: none;
-  margin-top: 60px;
-}
-#charadex-body.active {
-  display: block;
-}
-
 /* ------------------------------------------------------------- */
 /* Hero images
 /* ------------------------------------------------------------- */
