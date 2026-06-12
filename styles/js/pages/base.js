@@ -70,4 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.style.setProperty("--hue-shift", `${360 - scrollPosition * 360}deg`);
   });
 
+  $('[data-bs-toggle="tooltip"]').tooltip();
+
 });
